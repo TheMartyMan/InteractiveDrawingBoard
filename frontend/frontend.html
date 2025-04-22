@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Drawing Board</title>
+  <link rel="icon" type="image/png" href="../icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 title="Készítette: DJ7PNE, F58KQ8 és AJYKQ3">Interactive Drawing Board</h1>
+    <div class="main-content">
+      
+      <div class="drawing-area">
+        <div class="toolbar">
+          <!-- Színek -->
+          <div class="color-option" style="background-color: black;" data-color="black" title="Fekete"></div>
+          <div class="color-option" style="background-color: red;" data-color="red" title="Piros"></div>
+          <div class="color-option" style="background-color: green;" data-color="green" title="Zöld"></div>
+          <div class="color-option" style="background-color: blue;" data-color="blue" title="Kék"></div>
+          <!-- Színválasztó -->
+          <input type="color" id="colorPicker" value="#000000" title="Válassz színt">
+          <!-- Eszközök -->
+          <div class="tool-option" id="eraser" title="Radír">🧽</div>
+          <div class="tool-option" id="clear" title="Teljes vászon törlés">🗑️</div>
+          <div class="tool-option" id="undo" title="Visszavonás">⟲</div>
+          <div class="tool-option" id="fillTool" title="Kitöltés">🧺</div>
+          <div class="tool-option" id="saveImage" title="Rajz letöltése">💾</div>
+        </div>
+      
+        <canvas id="drawingBoard" width="800" height="520"></canvas>
+      </div>
+      <div class="chat">
+        <h2>Chat</h2>
+        <div id="chatMessages"></div>
+        <div class="chat-footer">
+          <input type="text" id="chatInput" placeholder="Írj üzenetet...">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
